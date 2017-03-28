@@ -24,3 +24,16 @@ floor本身是向下取整->#include<cmath>
 效率不如if-else,（可能差小数点后5位。。。http://blog.csdn.net/zhangyandong16/article/details/23680351），但是可以简化代码
 不错的语法糖，但是使用的时候要有节制
 
+> from cqupt-oj 1009
+
+### string的使用
+
+试了一下string->#include <string>//不是cstring！
+
+直接用cin，cout读写string似乎没什么问题
+也可以直接用类似数组形式的随机访问
+但是特么的不能直接反转。。。
+
+所以还是用algorithm中提供的reverse配合string的迭代器进行反转吧
+std::reverse(str.begin(),str.end());
+
