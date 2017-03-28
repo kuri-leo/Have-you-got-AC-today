@@ -5,9 +5,11 @@
 
 ## 知识点
 > 利用iOS::sync_with_stdio(false)加速
+
 把与stdio同步关了可以加速
 
 > cout输出保留小数
+
 要导入这个头文件->#include <iomanip>
 然后是在输出流固定小数点和精度-> cout<<setiosflags(ios::fixed)<<setprecision(2)<<...
 
