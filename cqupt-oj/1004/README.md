@@ -7,6 +7,7 @@
 > 利用iOS::sync_with_stdio(false)加速
 
 把与stdio同步关了可以加速
+想起来了，这句话要放在main里面
 
 > cout输出保留小数
 
@@ -16,6 +17,6 @@
 当然这样子会自动四舍五入
 
 利用floor函数来强制消除小数->Vb=floor(Vb*1000)/1000//强制保留3位小树
-floor本身是向下取整
+floor本身是向下取整->#include<cmath>
 
 
