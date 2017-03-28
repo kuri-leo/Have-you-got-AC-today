@@ -37,3 +37,15 @@ floor本身是向下取整->#include<cmath>
 所以还是用algorithm中提供的reverse配合string的迭代器进行反转吧
 std::reverse(str.begin(),str.end());
 
+> from cqupt-oj 1011
+
+### 最大公约数和最小公倍数
+
+最大公约数->GCD
+直接辗转相除
+long long GCD(long long a,long long b){
+    return b==0?a:GCD(b,a%b);
+}
+
+最小公倍数
+最大公约数×最小公倍数=a x b
