@@ -1,6 +1,6 @@
 # Hint for Java
 
-### Input and Output
+## Input and Output
 
 Java的输入输出分别是
 输入:
@@ -37,3 +37,12 @@ Java的输入输出分别是
 等效于C中的printf，用法也是一样的 //格式化输出时有奇效
 
 ***
+
+## 重定向输入输出
+
+对应C中的freopen吧
+
+* `System.setIn(new FileInputStream(new File("in.txt")))`
+* `Syetem.setOut(new PrintStream(new File("out.txt")))`
+
+需要注意的是，这两货都会抛出`FileNotFoundException`,需要用`try-catch`包围
